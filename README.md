@@ -12,7 +12,7 @@ This task demonstrates:
 - HTML/CSS
 
 ## Database
-Import the `database.sql` file first.
+Import the `employee.sql` file first.
 
 ## Run
 Place the folder inside `htdocs` if using XAMPP, then open it in browser.
