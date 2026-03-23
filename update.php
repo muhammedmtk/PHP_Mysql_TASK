@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
     $id = $_POST['id'];
     $db     = Database::getInstance();
-
+    $conn = $db->getConnection();
     // first_name
     if (empty($_POST['first_name'])) {
         $errors['first_name'] = "User Name is required";

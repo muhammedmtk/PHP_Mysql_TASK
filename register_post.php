@@ -10,6 +10,7 @@ if(isset($_POST['submit']))
 {
     $errors = [];
     $db = Database::getInstance();
+    $conn = $db->getConnection();
 
     // first_name
     if (empty($_POST['first_name'])) {

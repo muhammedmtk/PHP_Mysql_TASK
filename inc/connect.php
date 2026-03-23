@@ -93,7 +93,7 @@ class Database
 public function getUser($id)
 {
 $stmt = $this->conn->prepare("SELECT * FROM users WHERE id = ?");
-$stmt->execute($id);
+$stmt->execute([$id]);
 return $stmt->fetch(PDO::FETCH_ASSOC);
 }
 
